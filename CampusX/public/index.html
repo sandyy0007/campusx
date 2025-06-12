@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Campus X Chat</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 h-screen flex flex-col">
+
+  <!-- Navbar -->
+  <nav class="w-full bg-green-600 text-white py-4 px-6 shadow-md flex justify-center">
+    <h1 class="text-2xl font-semibold">Campus X</h1>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="flex-grow flex justify-center items-center px-4">
+    <div class="w-full max-w-md bg-white shadow-lg rounded-lg p-6">
+
+      <!-- Registration Section -->
+      <div id="register-container" class="space-y-4">
+        <h2 class="text-xl font-bold text-gray-800 text-center">Welcome to Campus X</h2>
+        <p class="text-sm text-gray-600 text-center">Enter your username to start chatting:</p>
+        <input id="username" type="text" placeholder="Enter your username"
+          class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-green-500" />
+        <button id="registerBtn"
+          class="w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded">Register</button>
+      </div>
+
+      <!-- Chat Section -->
+      <div id="chat-container" class="hidden flex flex-col h-[60vh] mt-4">
+        <h2 class="text-lg font-semibold text-gray-800 mb-2 text-center">Chat Room</h2>
+
+        <!-- Recipient Input -->
+        <input id="recipient" type="text" placeholder="Recipient username"
+          class="w-full mb-2 px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-green-500" />
+
+        <!-- Messages -->
+        <ul id="messages"
+          class="flex-1 overflow-y-auto space-y-2 mb-2 p-2 border rounded bg-gray-50">
+          <!-- Messages go here -->
+        </ul>
+
+        <!-- Message Input -->
+        <div class="flex">
+          <input id="inputMessage" type="text" placeholder="Type a message..."
+            class="flex-1 px-4 py-2 border rounded-l focus:outline-none focus:ring-2 focus:ring-green-500" />
+          <button id="sendMessageBtn"
+            class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-r">Send</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Socket.io and Script -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
