@@ -17,3 +17,8 @@ As a task of CODTECH internship, I built a Real-time chatting application .To de
 This application excels in delivering a smooth, user-centric experience with responsive design, real-time feedback, and robust error handling. The dynamic interface ensures ease of use, while the backend reliably manages connections and messaging. Concluding, the project highlights the synergy of Socket.IO, Node.js, Express.js, and modern frontend technologies to build a scalable, efficient, and interactive one-on-one chat solution. I have named my project as **Campus X**.
 
 # OUTPUT OF THE TASK
+### CampusX Project Screenshots
+
+![Campus X 1](assets/campus%20x%201.png)
+![Campus X 2](assets/campus%20x%202.png)
+![Campus X 3](assets/campus%20x%203.png)
